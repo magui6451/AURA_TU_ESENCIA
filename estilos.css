@@ -1,0 +1,294 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #EDE2FA;
+    color: #4B286D;
+    line-height: 1.6;
+}
+
+/* ENCABEZADO */
+header {
+    background: linear-gradient(135deg, #E6D6FF, #A875D6, #7041A6);
+    text-align: center;
+    padding: 45px 20px;
+    border-bottom: 5px solid #592D86;
+}
+
+.logo {
+    width: 230px;
+    max-width: 90%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 42px;
+    color: #421765;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.subtitulo {
+    font-size: 18px;
+    color: #4B286D;
+    letter-spacing: 4px;
+    margin-top: 5px;
+}
+
+/* CONTENIDO */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+/* SECCIONES */
+section {
+    background-color: #FBF8FF;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(75, 40, 109, 0.15);
+}
+
+h2 {
+    text-align: center;
+    color: #8B52BC;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #7041A6;
+    margin-bottom: 8px;
+}
+
+/* PRESENTACIÓN */
+.presentacion {
+    background-color: #FBF8FF;
+    text-align: center;
+    border-top: 5px solid #C7A5F0;
+}
+
+.presentacion p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 17px;
+}
+
+/* INFORMACIÓN */
+.informacion {
+    background-color: #E2D0F7;
+}
+
+.datos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.dato {
+    background-color: #F3E9FF;
+    padding: 18px;
+    border-left: 6px solid #8B52BC;
+    border-radius: 12px;
+}
+
+.dato p {
+    margin: 0;
+}
+
+/* HORARIOS */
+.horarios {
+    background: linear-gradient(135deg, #A875D6, #7542AC);
+    text-align: center;
+}
+
+.horarios h2 {
+    color: #FFFFFF;
+}
+
+.horarios p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/* SERVICIOS */
+.servicios {
+    background-color: #D8C0F2;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: #F7F0FF;
+    padding: 25px;
+    text-align: center;
+    border: 2px solid #C4A0E8;
+    border-radius: 15px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta h3 {
+    font-size: 22px;
+    color: #7542AC;
+}
+
+/* PROMOCIONES */
+.promociones {
+    background-color: #B995E0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.promociones h2,
+.promociones .extra {
+    grid-column: 1 / -1;
+}
+
+.promociones h2 {
+    color: #4B206F;
+    margin-bottom: 5px;
+}
+
+.promo {
+    background-color: #F7F0FF;
+    padding: 15px;
+    margin: 0;
+    border: 2px solid #D1B5F0;
+    border-radius: 12px;
+    text-align: center;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.promo h3 {
+    font-size: 18px;
+    color: #7041A6;
+    overflow-wrap: anywhere;
+}
+
+.promo img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.promo p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #592D86;
+}
+
+.extra {
+    text-align: center;
+    margin-top: 5px;
+    color: #4B206F;
+    font-style: italic;
+}
+
+/* CONTACTO */
+.contacto {
+    background-color: #E8D9FA;
+    text-align: center;
+    border-bottom: 5px solid #A875D6;
+}
+
+.contacto p {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.contacto strong {
+    color: #7041A6;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background: linear-gradient(135deg, #7542AC, #421765);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* ADAPTACIÓN PARA CELULAR */
+@media (max-width: 700px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    .subtitulo {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 18px;
+        border-radius: 15px;
+    }
+
+    .datos,
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .promociones {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .promo img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .promo h3 {
+        font-size: 17px;
+    }
+
+    .logo {
+        width: 190px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
